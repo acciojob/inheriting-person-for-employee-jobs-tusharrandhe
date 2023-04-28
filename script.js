@@ -11,8 +11,8 @@ function Person(name, age)
 	
 function Employee(name, age, jobTitle) 
 {
-	this.name = name;
-	this.age = age;
+	super.name = name;
+	super.age = age;
 	this.jobTitle = jobTitle;
 	this.jobGreet = function()
 	{
