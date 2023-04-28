@@ -8,11 +8,10 @@ function Person(name, age) {
 	}
 }
 	
-// Person.prototype = greet();
-
 function Employee(name, age, jobTitle) {
-	this.name = name;
-	this.age = age;
+	__proto__ = Person;
+	// this.name = name;
+	// this.age = age;
 	this.jobTitle = jobTitle;
 	jobGreet(){
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
