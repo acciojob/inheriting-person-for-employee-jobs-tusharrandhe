@@ -8,9 +8,16 @@ function Person(name, age) {
 	}
 }
 	
-Person.prototype = greet();
+// Person.prototype = greet();
 
-function Employee(name, age, jobTitle) {}
+function Employee(name, age, jobTitle) {
+	this.name = name;
+	this.age = age;
+	this.jobTitle = jobTitle;
+	jobGreet(){
+	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}`);
+	}
+}
 
 // Do not change code below this line
 window.Person = Person;
