@@ -11,6 +11,7 @@ function Person(name, age)
 	
 function Employee(name, age, jobTitle) 
 {
+	__proto__ = Person;
 	super.name = name;
 	super.age = age;
 	this.jobTitle = jobTitle;
