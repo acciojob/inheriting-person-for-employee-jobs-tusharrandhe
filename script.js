@@ -23,12 +23,13 @@ function Employee(name, age, jobTitle)
 	// {
 	//  console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 	// }
+	this.__proto__ = Person;
 }
 Employee.prototype.jobGreet = function() {
 	 console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 }
 
-Employee.prototype = Object.extend(new Person);
+// Employee.prototype = Object.extend(new Person);
 
 // Do not change code below this line
 window.Person = Person;
