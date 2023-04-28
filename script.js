@@ -16,7 +16,7 @@ console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 	
 function Employee(name, age, jobTitle) 
 {
-	this.__proto__ = Person;
+	this.__proto__ = new Person;
 	// this.name = name;
 	// this.age = age;
 	this.jobTitle = jobTitle;
