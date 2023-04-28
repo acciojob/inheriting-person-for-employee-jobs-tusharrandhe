@@ -9,7 +9,7 @@ function Person(name, age) {
 }
 	
 function Employee(name, age, jobTitle) {
-	__proto__ = Person;
+	this.__proto__ = Person;
 	// this.name = name;
 	// this.age = age;
 	this.jobTitle = jobTitle;
