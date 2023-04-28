@@ -12,7 +12,7 @@ Person.prototype.greet = function() {
 console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 }
 
-Employee.__proto__ = Person;
+Employee.prototype = Object.extend(Person);
 	
 function Employee(name, age, jobTitle) 
 {
