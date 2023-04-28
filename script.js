@@ -11,7 +11,6 @@ function Person(name, age)
 	
 function Employee(name, age, jobTitle) 
 {
-// 	this.__proto__ = Person;
 	this.name = name;
 	this.age = age;
 	this.jobTitle = jobTitle;
@@ -21,8 +20,6 @@ function Employee(name, age, jobTitle)
 	}
 }
 
-const person = new Person("Alice", 25);
-const employee = new Employee("Bob", 30, "Manager");
 
 // Do not change code below this line
 window.Person = Person;
