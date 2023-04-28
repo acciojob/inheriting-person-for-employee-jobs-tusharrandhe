@@ -15,7 +15,7 @@ function Employee(name, age, jobTitle) {
 	this.age = age;
 	this.jobTitle = jobTitle;
 	jobGreet(){
-	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}`);
+	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 	}
 }
 
