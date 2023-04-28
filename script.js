@@ -16,6 +16,7 @@ console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 	
 function Employee(name, age, jobTitle) 
 {
+	this.__proto__ = Person;
 	this.name = name;
 	this.age = age;
 	this.jobTitle = jobTitle;
@@ -23,7 +24,7 @@ function Employee(name, age, jobTitle)
 	// {
 	//  console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 	// }
-	this.__proto__ = Person;
+	
 }
 Employee.prototype.jobGreet = function() {
 	 console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
