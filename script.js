@@ -23,7 +23,7 @@ function Employee(name, age, jobTitle)
 	//  console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 	// }
 }
-Employee.prototype.greet = function() {
+Employee.prototype.jobGreet = function() {
 	 console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 }
 
